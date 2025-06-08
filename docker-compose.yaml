@@ -9,9 +9,6 @@ services:
     ports:
       - 9022:8022 
     volumes: 
-      - ssh:/home/git/.ssh
-      - git:/git
+      - ./ssh:/home/git/.ssh
+      - ./git:/git
     restart: unless-stopped
-volumes:
-  ssh: 
-  git: 
