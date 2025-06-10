@@ -11,4 +11,5 @@ services:
     volumes: 
       - ./ssh:/home/git/.ssh
       - ./git:/git
+      - ./server:/tmp/ssh
     restart: unless-stopped
